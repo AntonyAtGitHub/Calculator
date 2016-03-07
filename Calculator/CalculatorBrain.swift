@@ -26,7 +26,6 @@ class CalculatorBrain {
                 case .BinaryOperation(let symbol, _):
                     return symbol
                 }
-                
             }
         }
     }
@@ -34,6 +33,8 @@ class CalculatorBrain {
     private var opStack = Array<Op>()               // = [Op]()
     
     private var knownOps = Dictionary<String, Op>() // = [String:Op]()
+    
+    
     
     init() {
         func learnOp(op: Op) {
